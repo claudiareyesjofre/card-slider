@@ -1,12 +1,62 @@
+/* my card diseño carousel */
+div.product-carousel-home{
+    position:relative;
+    overflow: hidden;
+    padding: 20px;
+    width: 1600px;
+    right: 150px;
+  
+}
+div.container.carousel-home{
+    position: relative;
+    right: 20px;
+    display: flex;
+    max-width: 1200px;
+    overflow: hidden; 
+   scroll-behavior: smooth;
+   white-space: nowrap;
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
+div.my-card{
+    object-fit: cover;
+    min-width: 450px;
+    max-width: 450px;
+    height: 340px;
+    background-color: blueviolet;
+    color: white; 
+    margin-left: 5px;
+}
 
-*/
+
+div.my-card::first-child{
+    margin-left: 0px;
+}
+button.pre-btn,.next-btn{
+    border: none;
+    background: transparent;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button.next-btn{
+    right: 50px;
+}
+
+p.slider-home{
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.459);
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px black;
+}
